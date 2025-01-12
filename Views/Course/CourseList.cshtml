@@ -1,0 +1,8 @@
+@model List<basics.Models.Course>
+
+  @foreach (var kurs in Model)
+  {
+      @await Html.PartialAsync("_Course", kurs)
+  }
+  
+
